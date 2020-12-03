@@ -38,6 +38,7 @@ a {
   margin-bottom: 3px;
 }
 
+
 header {
   height: 75px;
   width: 100%;
@@ -48,8 +49,8 @@ header {
 }
 
 .header-right {
-  float: right;
   margin-right: -25px;
+  overflow: hidden;
 }
 
 .header-right a {
@@ -65,10 +66,14 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
+.header-right .icon {
+  display: none;
+}
+
 /* Add CSS for menu-icon */
 .menu-icon {
   color: white;
-  float: right;
+  float: center;
   font-size: 25px;
   padding: 21px 0;
   /* Change the display property to none */
@@ -415,8 +420,8 @@ select: focus {
 	}
 	
     .tabs .tab-2 [type="radio"] + div {
-      width: 200%;
-      margin-left: 200%; 
+      width: 100%;
+      margin-left: 0%; 
 	  }
 	  
     .tabs .tab-2 [type="radio"]:checked + div {
@@ -428,7 +433,7 @@ select: focus {
 	  }
 	  
     .tabs .tab-2:last-child [type="radio"]:checked + div {
-      margin-left: -100%;
+      margin-left: 0%;
 	  }
 	  
 
@@ -656,3 +661,74 @@ margin-left: 2px;
 margin-bottom: 0px;
 }
  
+.site-footer {
+	background-color: rgba(34, 49, 52, 0.9);
+	padding-bottom: 150px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 50px;
+	font-size: 15px;
+	line-height: 24px;
+	color: yellow;
+}
+
+.site-footer hr {
+	border-top-color: #bbb;
+	opacity: 0.5;
+}
+
+.site-footer hr.small {
+	margin: 20px 0;
+}
+
+.site-footer h6 {
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 5px;
+	letter-spacing: 2px;
+}
+
+.site-footer a {
+	color: yellow;
+}
+
+.site-footer a:hover {
+	color: #3366cc;
+	text-decoration: none;
+}
+
+.footer-links {
+	padding-left: 0;
+	list-style: none;
+}
+
+.footer-links li {
+	display: block;
+}
+
+.footer-links a {
+	color: yellow;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+	color: #3366cc;
+	text-decoration: none;
+}
+.footer-links.inline li {
+	display: inline-block;
+}
+.site-footer .social-icons {
+	text-align: right;
+}
+.site-footer .social-icons a {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 6px;
+	margin-right: 0;
+	border-radius: 100%;
+	background-color; #33353d;
+}
+.copyright-text {
+	margin: 0;
+}

@@ -1,9 +1,275 @@
-/* For Tablets */
-@media all and (max-width: 1000px) {
-  .lesson {
+@media all and (min-width: 501px) and (max-width: 734px) {
+
+
+
+}
+
+@media all and (max-width: 991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom: 30px;
+  }
+}
+@media all and (max-width: 767px)
+{
+  .site-footer
+  {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align: center;
+  }
+}
+.social-icons
+{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.social-icons li
+{
+  display: inline-block;
+  margin-bottom: 4px;
+}
+.social-icons li.title
+{
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+.social-icons a{
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color: #fff;
+  background-color: #29aafe;
+}
+.social-icons.size-sm a
+{
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+.social-icons a.facebook:hover
+{
+  background-color: #3b5998;
+}
+.social-icons a.twitter:hover
+{
+  background-color: #00aced;
+}
+.social-icons a.linkedin:hover
+{
+  background-color: #007bb6;
+}
+.social-icons a.dribbble:hover
+{
+  background-color: #ea4c89;
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+
+@media all and (min-width: 1001px) and (max-width: 1124px) {
+	.mypic {
+    float: left;
     width: 50%;
     margin-bottom: 50px;
   }
+  img.editpic {
+    width: 90%;
+  }
+  .myintro {
+    float: right;
+    width: 50%;
+  }
+  .text-contents {
+  width: 100%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 23px;
+  color: black;
+  text-align: justify;
+}
+}
+@media all and (min-width: 796px) and (max-width: 1000px) {
+.about-wrapper {
+  padding-bottom: 650px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.mypic {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  img.editpic {
+    width: 90%;
+  }
+  .myintro {
+    float: right;
+    width: 50%;
+  }
+.text-contents {
+  width: 100%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 20px;
+  color: black;
+  text-align: justify;
+}
+}
+@media all and (min-width: 768px) and (max-width: 795px) {
+.about-wrapper {
+  padding-bottom: 650px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.mypic {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  img.editpic {
+    width: 90%;
+  }
+  .myintro {
+    float: right;
+    width: 50%;
+  }
+  .text-contents {
+  width: 100%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 23px;
+  color: black;
+  text-align: justify;
+}
+.ee-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+}
+
+/* For Tablets */
+@media all and (min-width: 501px) and (max-width: 894px) {
+.header-right a:not(:first-child) {display: none;}
+  .header-right a.icon {
+  line-height: 65px;
+	padding: 0 45px;
+    float: right;
+    display: block;
+	 background-color: rgba(34, 49, 52, 0.9);
+	transition: all 0.5s;
+  }
+  
+ 
+ .header-right.mynewmenu {position: relative;}
+  .header-right.mynewmenu .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	
+  }
+  .header-right.mynewmenu a {
+    float: none;
+    display: block;
+    text-align: left;
+	height: 45px;
+  }
+  .header-right.mynewmenu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+/*.header-right {
+  float: right;
+  margin-right: -5px;
+}
+.header-right a {
+  line-height: 65px;
+  padding: 0 10px;
+  color: white;
+  display: block;
+  float: center;
+  transition: all 0.5s;
+} */
+  .top-wrapper {
+  padding: 180px 0 210px 0;
+  background-image: url("barley5_3.jpg");
+  background-size: inherit;
+  text-align: right;
+  color: black;
+}
+  .top-wrapper h1 {
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.top-wrapper h2 {
+  font-size: 20px;	
+  margin-bottom: 3px;
+}
+.about-wrapper {
+  padding-bottom: 500px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+  .mypic {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  
+  img.editpic {
+    width: 90%;
+  }
+  
+  .myintro {
+    float: right;
+    width: 50%;
+  }
+  
+  .text-contents {
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+}
 
   .top-wrapper h1 {
     font-size: 32px;
@@ -12,10 +278,17 @@
   .heading h2 {
     font-size: 20px;
   }
+  .skill-wrapper {
+  padding-bottom: 370px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
 }
 
 /* For Smartphones */
-@media all and (max-width: 670px) {
+/*@media all and (max-width: 670px) {
   .lesson {
     width: 100%;
   }
@@ -37,12 +310,12 @@
   }
 
   /* Add CSS for header-right */
-  .header-right {
+  /*.header-right {
     display: none;
   }
 
   /* Add CSS for menu-icon */
-  .menu-icon {
+/*  .menu-icon {
     display: block;
   }
 
@@ -55,7 +328,7 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
+}*/
 
 @media screen and (max-width: 660px) {
 
@@ -158,7 +431,7 @@
 
 
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media all and (min-width: 400px ?? max-width: 660px) {
 
 .direction-l .desc,
 .direction-r .desc {
@@ -176,3 +449,256 @@ line-height: 3.5em;
 font-size: 0.8em;
 }
 }
+
+@media all and (max-width: 500px) {
+.container {
+  width: 100%;
+  padding: 0 2px;
+  margin: 0 auto;
+}
+header {
+  height: 75px;
+  width: 100%;
+   background-color: none;
+  position: none;
+  top: 0;
+}
+.header-right a:not(:first-child) {display: none;}
+  .header-right a.icon {
+  line-height: 65px;
+	padding: 0 45px;
+    float: right;
+    display: block;
+	 background-color: rgba(34, 49, 52, 0.9);
+	transition: all 0.5s;
+  }
+  
+ 
+ .header-right.mynewmenu {position: relative;}
+  .header-right.mynewmenu .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+	
+  }
+  .header-right.mynewmenu a {
+    float: none;
+    display: block;
+    text-align: left;
+	height: 45px;
+  }
+  .header-right.mynewmenu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+  .top-wrapper {
+  padding: 180px 0 210px 0;
+  background-image: url("barley5_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  color: black;
+}
+  .top-wrapper h1 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.top-wrapper h2 {
+  font-size: 15px;	
+  margin-bottom: 3px;
+}
+.heading h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #ff0000;
+  text-decoration: underline;
+}
+  .about-wrapper {
+  padding-bottom: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.mypic {
+	float: none;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  img.editpic {
+    width: 100%;
+  }
+  
+  .myintro {
+	float: none;
+    width: 100%;
+  }
+  
+  .text-contents {
+    width: 100%;
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+}
+
+.skill-wrapper {
+  padding-bottom: 400px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.skill {
+  float: left;
+  width: 50%;
+}
+.skill-name h3 {
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
+.skill-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: -30px;
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+.ee-wrapper {
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.lnc-wrapper {
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.tabs [class^="tab"] label,
+  .tabs [class*=" tab"] label {
+    color: black;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1em;
+    padding: 1rem 0;
+    text-align: center; 
+	}
+	.list {
+	  font-size: 10px;
+	  padding-top: 15px;
+	  padding-bottom: 10px;
+	  padding-left: 0;
+	  padding-right: 4px;
+	  text-align: center-left;
+	}
+	.tabs [class^="tab"] [type="radio"] + div,
+    .tabs [class*=" tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 1rem 1rem;
+	  transition: all 0.3s ease-in-out; 
+	  }
+	.tabs .tab-2 [type="radio"] + div {
+    width: 100%;
+    margin-left: 0%;
+}
+	  
+    .tabs .tab-2 [type="radio"]:checked + div {
+      margin-left: 0; 
+	  }
+	  
+    .tabs .tab-2:last-child [type="radio"] + div {
+      margin-left: 250%; 
+	  }
+	  
+    .tabs .tab-2:last-child [type="radio"]:checked + div {
+      margin-left: 0%;
+	  }
+	  #contact h1 {
+    background: #F2385A;
+    font-family: Oswald ,sans-serif;
+    font-size: 1.5em;
+    padding: 0.3em 0 0.3em 0.2em;
+    color: white;
+    text-shadow: 0 0.03em 0 #424242;
+    position: relative;
+}
+#contact p {
+font-size: 1em;
+}
+
+.btn_contact .icn_contact {
+	size: 20px;
+}
+
+}
+
+@media all and (max-width: 500px) {
+ 
+}
+
+/*
+@media screen and (max-width: 425px) {
+.header-right {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.header-right a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.header-right .icon {
+  display: none;
+}
+
+.header-right a:hover {
+  background-color: #555;
+  color: white;
+}
+
+  .header-right a:not(:first-child) {
+    display: none;
+  }
+  .header-right a.icon {
+    float: right;
+    display: block;
+  }
+  .header-right.responsive {position: relative;}
+  .header-right.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header-right.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right.responsive  {float: none;}
+  .header-right.responsive  {position: relative;}
+  .header-right.responsive  {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}*/

@@ -1,4 +1,9 @@
-document.getElementById("sendLetter").addEventListener("click", addClass);
-function addClass() {
-	document.body.classList.add("sent");
+
+function myFunction() {
+  var x = document.getElementById("myheader");
+  if (x.className === "header-right") {
+    x.className += " responsive";
+  } else {
+    x.className = "header-right";
+  }
 }
