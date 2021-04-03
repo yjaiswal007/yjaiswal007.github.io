@@ -149,7 +149,9 @@ header {
   color: black;
   text-align: center;
 }
-
+.checked {
+	color: blue;
+}
 .ee-wrapper {
   padding-bottom: 100px;
   padding-left: 5%;
@@ -539,7 +541,7 @@ max-height: 1000px;
 }
 .input_wrapper {
 position: relative;
-}
+} 
 .textarea_wrapper textarea {
 margin-top: 20px;
 display: block;
@@ -659,6 +661,18 @@ box-shadow: 1px 1px 0 0 #832032,0px 0px 0 0 #832032,0px 0px 0 0 #832032;
 margin-top: 22px;
 margin-left: 2px;
 margin-bottom: 0px;
+}
+ 
+ .visitor-wrapper {
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+ 
+ .visitor-wrapper img {
+	width: 300px;
 }
  
 .site-footer {

@@ -645,6 +645,10 @@ font-size: 1em;
 	size: 20px;
 }
 
+.visitor-wrapper img {
+		width: 60%;
+	}
+
 }
 
 @media all and (max-width: 500px) {
