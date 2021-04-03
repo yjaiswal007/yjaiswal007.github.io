@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
 	
-	
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash D Jaiswal Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
 	<link rel="stylesheet" href="responsive.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			
   </head>
   <body>
     <header>
@@ -87,7 +88,11 @@
 			  <h3>Python</h3>
 			</div>
 			<div class="skill-contents">
-			  <p>Highly skilled with 4+ years of experience</p>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
 			</div>
 		  </div>
 		  <div class="skill">
@@ -95,7 +100,11 @@
 			  <h3>Statistics</h3>
 			</div>
 			<div class="skill-contents">
-			  <p>Highly skilled with 3+ years of experience</p>
+			  <span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
 			</div>
 		  </div>
 		  <div class="skill">
@@ -103,7 +112,11 @@
 			  <h3>Tableau</h3>
 			</div>
 			<div class="skill-contents">
-			  <p>Highly skilled with 1+ years of experience</p>
+			  <span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
 			</div>
 		  </div>
 		  <div class="skill">
@@ -111,7 +124,11 @@
 			  <h3>My SQL</h3>
 			</div>
 			<div class="skill-contents">
-			  <p>Highly skilled with 3+ years of experience</p>
+			   <span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
 			</div>
 		  </div>
 		  <div class="skill">
@@ -119,7 +136,11 @@
 			  <h3>Machine Learning (ML)</h3>
 			</div>
 			<div class="skill-contents">
-			  <p>Highly skilled with 3+ years of experience</p>
+			  <span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
 			</div>
 		  </div>
 		  <div class="skill">
@@ -127,7 +148,11 @@
 			  <h3>Deep Learning (DL)</h3>
 			</div>
 			<div class="skill-contents">
-			  <p>Highly skilled with 2+ years of experience</p>
+			  <span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
 			</div>
 		  </div>
 		</div>
@@ -245,7 +270,6 @@
 		    <ul class="list">
 			  <li><a href="https://www.coursera.org/account/accomplishments/verify/AQKGJR9Y6NRY" target="_blank" rel="noopener noreferrer">Machine Learning</a></li>
 			  <br>
-			  <li><a href="https://verify.lagunita.stanford.edu/SOA/9e25043d7c6a4f0c9123669286c99b79/" target="_blank" rel="noopener noreferrer">Statistical Learning</a></li>
 			</ul>
           </div>
         </div>
@@ -269,6 +293,8 @@
 	  </div>
 	</div>
 	
+	
+	
 	<div class="contact-wrapper" id="contactme">
 	  <section id="contact">
 	    <div class="sectionheader">
@@ -284,17 +310,74 @@
 			<span class="mylinks-r" style="font-size:25px; text-align:right;"  class="icn_contact"><i class="fas fa-phone-alt" style="font-size:36px; color:brown; text-align:center;">&ensp;</i>8861016669</span>
 		  </div>
 		  <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
-	
-		  <form action="" method="post" class="contactform" onsubmit="return false">
+
+		  <form id="form1" class="contactform">
 			<p class="input_wrapper"><input type="text" name="contact_nom" value=""  id ="contact_nom"><label for="contact_nom">NAME</label></p>
 			<p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
 			<p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
 			<p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
 			<p class="submit_wrapper"><input type="submit" value="SEND MESSAGE"></p>			
 		  </form>
+
+		  <script>
+			$(document).ready(function() {
+
+				$('#form1').on('submit', function(e) {
+					e.preventDefault();
+		
+					//get the name field value
+					var name = $('#contact_nom').val();
+					//get the name field value
+					var email = $('#contact_email').val();
+					var subject = $('#contact_sujet').val();
+					//get the comments
+					var comments = $('#contact_message').val();
+				
+					$.ajax({
+						url:'https://formsapi.jabwn.com/key/wBi3vLX8vwl5aSnj4mBK',
+						method:'POST',
+						data:{
+							 name:name,
+							_replyto:email,
+							 email:email,
+							 subject:subject,
+							comments:comments,
+							_subject:subject,
+
+						},
+						dataType:"json",
+						success:function() {
+							console.log('success');	
+							window.location = "thank_you.html";
+						}	
+
+					});		
+					return false;
+				});
+
+			});	
+		  </script>
+
+		  
 		</article>
 	  </section>
+	  <br><br>
+	  <hr style="height:2px;border-width:0;color:gray;background-color:blue">
+	  <br>
+	  <br>
+	  <br>
 	</div>
+	
+	<div class="visitor-wrapper">
+	  <div class="container">
+		<div class="heading heading-3">
+		  <h2>TOTAL VISITOR</h2>
+		  <img src="https://counter8.stat.ovh/private/freecounterstat.php?c=5luq8dum7rykpepp3f5b8g1dlrfgsz6x" border="2" title="page counter" alt="page counter">
+	    </div>
+	  </div>
+	</div>
+	<hr>
+	
 	
 	<footer class="site-footer">
 		<div class="container-2">
